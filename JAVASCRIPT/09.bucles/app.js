@@ -35,7 +35,7 @@ for (let i = 1; i <= 10; i++) {
   }
 }
 
-const paises = ["Inglaterra", "China", "Francia", "España"];
+const paises = ["Inglaterra", "China", "Francia", "España", "Portugal"];
 
 for (const pais of paises) {
   console.log(pais);
