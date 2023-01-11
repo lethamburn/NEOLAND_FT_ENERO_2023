@@ -62,3 +62,61 @@ for (const key in movie) {
 for (const key in movies) {
   console.log(key);
 } */
+
+
+const students = [
+  {
+    name: 'Marta',
+    age: 30,
+    isNeolander: true
+  },
+  {
+    name: 'Carlos',
+    age: 30,
+    isNeolander: true
+  },
+  {
+    name: 'Pepe',
+    age: 21,
+    isNeolander: false
+  }
+]
+
+let studentsFilteredList = []
+for (let i = 0; i < students.length; i++) {
+  if (students[i].age == 30 && students[i].isNeolander) {
+    studentsFilteredList.push(students[i])
+  }
+}
+
+console.log(studentsFilteredList)
+
+const listNumber = [3, 2, 1, 3]
+
+for (const number of listNumber) {
+  if (number == 3) listNumber.splice(listNumber.indexOf(number))
+}
+
+console.log(listNumber)
+
+
+const toys = [
+  { id: 5, name: 'Buzz MyYear' },
+  { id: 11, name: 'Action Woman' },
+  { id: 23, name: 'Barbie Man' },
+  { id: 40, name: 'El gato con Guantes' },
+  { id: 40, name: 'El gato felix' },
+  { id: 40, name: 'Paco' },
+  { id: 40, name: 'El gato Doraemon' }
+]
+
+let listNoCats = []
+for (const toy of toys) {
+  if (toy.name.includes('gato') == false) {
+    listNoCats.push(toy.name)
+    console.log(toy.name)
+    // toys.splice(toys.indexOf(toy))
+  }
+}
+
+console.log(listNoCats)
