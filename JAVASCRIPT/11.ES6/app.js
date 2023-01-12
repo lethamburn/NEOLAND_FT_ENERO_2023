@@ -171,3 +171,75 @@ console.log("¿Todos son veganos?", isVegan);
 //Some
 const someIsVegan = vegan.some((item) => item === "🥝");
 console.log("¿Hay algo vegano en el menú?", someIsVegan ? "Si" : "No");
+
+//Mix
+const superheroes = [
+  {
+    name: "Wolverine",
+    type: "Mutant",
+    power: 65,
+  },
+  {
+    name: "Hulk",
+    type: "Human",
+    power: 80,
+  },
+  {
+    name: "Magneto",
+    type: "Mutant",
+    power: 78,
+  },
+  {
+    name: "Iron Man",
+    type: "Human",
+    power: 60,
+  },
+];
+
+//1º Necesito generar un nuevo array de objetos en el que el "type" se transforme en "specie"
+//2º Necesito quedarme con solamente los mutantes
+//3º Necesito saber cual es el total de poder combinado de todos los mutantes
+
+//1º
+const superheroesSpecies = superheroes.map((superheroe) => ({
+  name: superheroe.name,
+  specie: superheroe.type,
+  power: superheroe.power,
+}));
+
+console.log(superheroesSpecies);
+
+//2º
+/* for (let i = 0; i < superheroesSpecies.length; i++) {
+  const superheroe = superheroesSpecies[i];
+}
+ */
+const mutants = superheroesSpecies.filter(
+  (superheroe) => superheroe.specie === "Mutant"
+);
+
+console.log(mutants);
+
+//3º
+const totalMutantPower = mutants.reduce((acc, mutant) => acc + mutant.power, 0);
+
+/* let total = 0;
+for (let i = 0; i < mutants.length; i++) {
+  const mutant = mutants[i];
+  total += mutant.power;
+}
+console.log(total); */
+
+console.log(totalMutantPower);
+
+//En una linea
+const totalSpecieMutantPower = superheroes
+  .map((superheroe) => ({
+    name: superheroe.name,
+    specie: superheroe.type,
+    power: superheroe.power,
+  }))
+  .filter((superheroe) => superheroe.specie === "Mutant")
+  .reduce((acc, mutant) => acc + mutant.power, 0);
+
+console.log(totalSpecieMutantPower);
