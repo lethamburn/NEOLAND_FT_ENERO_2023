@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./app.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <details>
+      <summary>Más info</summary>
+      <h2>Nombre</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat sunt ea
+        autem obcaecati voluptate amet fugit enim commodi explicabo nihil
+        aspernatur, asperiores doloribus accusantium rem dignissimos tempore
+        ipsam et ratione.
+      </p>
+    </details>
+    <dialog id="alert">
+      <p>¡Hola!</p>
+      <button id="close" onclick="document.getElementById('alert').close()">
+        Ok!
+      </button>
+    </dialog>
+    <button id="show" onclick="document.getElementById('alert').show()">
+      Mostrar
+    </button>
+    <dialog id="alert">
+      <p>¡Hola!</p>
+      <button id="close" onclick="document.getElementById('alert').close()">
+        Ok!
+      </button>
+    </dialog>
+    <button id="show" onclick="document.getElementById('alert').show()">
+      Mostrar
+    </button>
+    <dialog id="gandalfModal">
+      <img
+        src="https://static.wikia.nocookie.net/eldragonverde/images/4/47/Gandalf.png/revision/latest?cb=20121217202035&path-prefix=es"
+        alt="Gandalf"
+      />
+      <p>¡NO.. PUEDES... PASAR!</p>
+      <button
+        id="close"
+        onclick="document.getElementById('gandalfModal').close()"
+      >
+        Ok!
+      </button>
+    </dialog>
+    <button
+      id="show"
+      onclick="document.getElementById('gandalfModal').showModal()"
+    >
+      Mostrar
+    </button>
+    <script>
+      alert("Hola");
+    </script>
+    <button onClick="alert('Hola')">Hola</button>
+  </body>
+</html>

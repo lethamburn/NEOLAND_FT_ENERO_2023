@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Datos personales</legend>
+        <label for="username">Username:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Username"
+          minlength="4"
+          maxlength="20"
+          value="Killer8"
+        />
+        <input type="password" />
+        <textarea>Escribe tu descripción</textarea>
+        <input type="number" min="0" max="20" step="5" />
+        <input type="range" min="0" max="20" step="5" />
+        <input type="date" min="2023-01-01" max="2024-01-01" />
+        <input type="week" />
+      </fieldset>
+      <input type="button" value="Click aquí" />
+      <input type="checkbox" checked value="aceptado" />
+      <input type="radio" id="menos18" value="menos18" name="edad" />
+      <input type="radio" id="18a30" value="18a30" name="edad" />
+      <input type="radio" id="31a50" value="31a50" name="edad" />
+      <input type="radio" id="mas50" value="mas50" name="edad" />
+
+      <select name="movies" id="movies">
+        <option value="">-</option>
+        <optgroup label="Actuales">
+          <option value="batman">The Batman</option>
+          <option value="tenet">Tenet</option>
+          <option value="Dr. Strange">Dr. Strange</option>
+        </optgroup>
+        <optgroup label="Vintage">
+          <option value="superman">Superman</option>
+          <option value="lawrence">Lawrence de Arabia</option>
+          <option value="carretera">Carreta Perdida</option>
+        </optgroup>
+      </select>
+
+      <input type="submit" value="Click aqui" />
+      <input type="reset" value="Reset" />
+    </form>
+    <form>
+      <input type="text" list="items" />
+      <datalist id="items">
+        <option value="ordenador">Ordenador</option>
+        <option value="plancha">Plancha</option>
+        <option value="sandwichera">Sandwichera</option>
+      </datalist>
+      <meter min="0" max="100" low="20" high="90" optimum="50" value="40" >
+      <progress min="0" max="100" value="50" >
+
+      <input type="color" value="#FFFFFF" />
+      <label for="file">Subir archivo</label>
+      <input type="file" id="file" />
+    </form>
+  </body>
+</html>
