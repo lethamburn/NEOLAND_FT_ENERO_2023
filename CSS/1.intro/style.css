@@ -1,0 +1,45 @@
+/* SELECTOR UNIVERSAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* SELECTOR POR ETIQUETA */
+h1 {
+  color: cadetblue;
+}
+
+p {
+  color: crimson;
+}
+
+/* SELECTOR POR CLASE */
+.parrafo {
+  color: greenyellow;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* SELECTOR POR ID */
+
+#link {
+  color: purple;
+}
+
+/* SELECTOR POR ATRIBUTO */
+a[href="http://www.twitter.com"]
+{
+  color: lightskyblue;
+}
+
+a[href="http://www.linkedin.com"]
+{
+  color: darkblue;
+}
+
+button[disabled] {
+  background-color: crimson;
+}

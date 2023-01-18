@@ -1,0 +1,16 @@
+body {
+  background-color: coral;
+  color: #ff0000;
+}
+
+h1 {
+  color: rgb(104, 102, 130);
+}
+
+h2 {
+  color: rgba(255, 0, 0, 0.431);
+}
+
+h3 {
+  color: rgb(245, 0, 0);
+}

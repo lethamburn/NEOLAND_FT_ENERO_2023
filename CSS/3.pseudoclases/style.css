@@ -1,0 +1,82 @@
+button:active {
+  background-color: orange;
+}
+
+a:any-link {
+  color: red;
+}
+
+input:checked + label {
+  color: red;
+}
+
+button:disabled {
+  background-color: aquamarine;
+}
+
+.listaNums li:first-child {
+  color: orange;
+}
+
+.username:focus {
+  background-color: crimson;
+  color: yellow;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.box:hover {
+  background-color: blue;
+  width: 120px;
+  height: 120px;
+}
+
+.name:invalid {
+  background-color: red;
+}
+
+.listaNumsTwo li:last-child {
+  color: orange;
+}
+
+a:link {
+  color: green;
+}
+
+.titles :not(h1) {
+  color: red;
+}
+
+.books li:nth-child(2n) {
+  color: red;
+}
+
+.movies li:nth-last-child(3n) {
+  color: red;
+}
+
+section p:only-child {
+  color: red;
+}
+
+input:read-only {
+  background-color: grey;
+}
+
+input:required {
+  color: red;
+}
+
+a:visited {
+  color: violet;
+}
+
+:root {
+  --primary: red;
+  --secondary: blue;
+  font-size: 20px;
+}

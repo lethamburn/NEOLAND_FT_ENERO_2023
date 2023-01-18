@@ -1,0 +1,34 @@
+:root {
+  font-size: 18px;
+}
+
+/* UNIDADES ABSOLUTAS */
+div {
+  width: 200px;
+  height: 1px;
+  background-color: black;
+}
+
+/* UNIDADES RELATIVAS */
+p {
+  font-size: 2rem;
+}
+
+section {
+  font-size: 15px;
+}
+section p {
+  font-size: 1em;
+}
+
+article {
+  height: 10vh;
+  width: 50vw;
+  background-color: red;
+}
+
+article > div {
+  height: 100%;
+  width: 50%;
+  background-color: green;
+}

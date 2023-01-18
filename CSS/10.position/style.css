@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: cadetblue;
+}
+
+.box2 {
+  position: relative;
+  background-color: crimson;
+  top: 50px;
+  left: 10px;
+  z-index: 1;
+}
+
+.box3 {
+  position: absolute;
+}
+
+header {
+  height: 8rem;
+  background-color: brown;
+  position: fixed;
+}

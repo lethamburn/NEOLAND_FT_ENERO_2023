@@ -1,0 +1,42 @@
+body {
+  background-color: #000000;
+  background-image: url(./fancy-pants.jpg);
+}
+
+.box {
+  padding: 20px 10px 20px 10px;
+  margin: 10px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: crimson;
+  width: 300px;
+  height: 300px;
+}
+
+section {
+  width: 200px;
+  height: 100px;
+  background-color: orange;
+  overflow: scroll;
+}
+
+.box2 {
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: aqua;
+  border: 10px dashed black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+article {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}

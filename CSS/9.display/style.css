@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 40vh;
+  background-color: blueviolet;
+}
+
+main {
+  height: 50vh;
+  background-color: brown;
+}
+
+footer {
+  height: 10vh;
+  background-color: wheat;
+}
+
+h2 {
+  display: none;
+}
+
+.container {
+  background-color: aqua;
+  display: block;
+}
+
+.container span {
+  height: 50px;
+  width: 50px;
+  padding: 30px;
+  background-color: aquamarine;
+  margin: 10px;
+  text-align: center;
+}

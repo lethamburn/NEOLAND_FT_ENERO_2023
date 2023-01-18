@@ -1,0 +1,26 @@
+li {
+  list-style-type: none;
+}
+
+li::after {
+  content: "🦸🏻";
+  padding-left: 10px;
+}
+
+li::before {
+  content: "Ⓧ";
+  color: orange;
+  padding-right: 4px;
+}
+
+h2::first-letter {
+  font-size: 200%;
+}
+
+p::first-line {
+  color: orange;
+}
+
+input::placeholder {
+  color: orange;
+}

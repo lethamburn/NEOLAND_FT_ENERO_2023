@@ -1,0 +1,25 @@
+/* COMBINADOR DE HERMANOS ADYACENTES */
+.homelink + li {
+  color: blue;
+}
+
+/* COMBINADOR GENERAL DE HERMANOS */
+.titulo ~ p {
+  color: crimson;
+}
+
+/* COMBINADOR DE HIJO */
+.superheroes > li {
+  color: orange;
+}
+.superheroes > li > p {
+  color: blue;
+}
+.villanos > li {
+  color: crimson;
+}
+
+/* COMBINADOR DE DESCENDIENTES */
+.villanos p {
+  color: blue;
+}
