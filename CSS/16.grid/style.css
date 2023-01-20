@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-rows:
+    20vh
+    60vh
+    20vh;
+  grid-template-columns: 25vw 50vw 25vw;
+  grid-gap: 1rem;
+}
+
+.box {
+  background-color: crimson;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.box2 {
+  background-color: blueviolet;
+  grid-row: 3;
+  grid-column: 2;
+}

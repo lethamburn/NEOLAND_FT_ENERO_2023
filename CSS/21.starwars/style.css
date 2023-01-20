@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --background: #0a0b0b;
+  --primary: #f8f8f8;
+  --links: #dddddd;
+  --links-hover: #ffffff;
+  --border: #9e4f60;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--primary);
+  background-image: url("https://lumiere-a.akamaihd.net/v1/images/background-stars-desktop_v2_96b6d74a.jpeg?region=0%2C0%2C2048%2C1600");
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+header > .title {
+  height: 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > .title > img {
+  height: 60%;
+}
+
+header > nav > ul {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+header > nav > ul > li > a {
+  color: var(--links);
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+}
+
+header > nav > ul > li > a:hover {
+  color: var(--links-hover);
+  border-bottom: 2px solid var(--links-hover);
+}
+
+main {
+  padding: 3rem 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(322px, 1fr));
+  grid-template-rows: repeat(auto-fill, 530px);
+  grid-gap: 2rem;
+}
+
+main > figure > .description {
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  height: 20%;
+}
+
+main > figure > .image_container {
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+  height: 322px;
+  overflow: hidden;
+}
+
+main > figure > .image_container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: all 2s ease-in-out;
+}
+
+main > figure > .image_container > img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+main > figure > h2 {
+  font-size: 1.2rem;
+  padding-top: 0.5rem;
+}
+
+main > figure > div > p {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: 0.5rem;
+}
+
+.spinner {
+  width: 4.8px;
+  height: 4.8px;
+  display: block;
+  margin: 20px auto;
+  position: relative;
+  border-radius: 4px;
+  color: #fff;
+  background: currentColor;
+  box-sizing: border-box;
+  animation: animloader 0.3s 0.3s linear infinite alternate;
+}
+.spinner::after,
+.spinner::before {
+  content: "";
+  box-sizing: border-box;
+  width: 4.8px;
+  height: 4.8px;
+  border-radius: 4px;
+  background: currentColor;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  animation: animloader 0.3s 0.45s linear infinite alternate;
+}
+.spinner::after {
+  top: -15px;
+  animation-delay: 0s;
+}
+
+@keyframes animloader {
+  0% {
+    width: 4.8px;
+  }
+  100% {
+    width: 48px;
+  }
+}
+
+.spinner_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  transform: scale(3);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 0.6rem;
+}
