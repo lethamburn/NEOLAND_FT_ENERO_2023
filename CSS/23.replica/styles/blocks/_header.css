@@ -1,0 +1,59 @@
+header > nav {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  gap: 3rem;
+  padding-left: 5%;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 2.5rem;
+  font-size: 13px;
+  letter-spacing: 2.6px;
+  font-weight: 100;
+}
+header > nav > ul > li {
+  display: flex;
+  flex-direction: column;
+}
+header > nav > ul > li::after {
+  content: "";
+  width: 0px;
+  height: 2px;
+  background-color: aliceblue;
+  position: relative;
+  top: 5px;
+  transition: all 0.4s ease-in-out;
+}
+
+header > nav > ul > li:hover::after {
+  width: 100%;
+}
+
+header > .hero {
+  height: 750px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > .hero > img {
+  animation: zoomBanner 5s;
+}
+
+@keyframes zoomBanner {
+  0% {
+    transform: scale(1.5);
+    filter: blur(14px) brightness(0%) saturate(0%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

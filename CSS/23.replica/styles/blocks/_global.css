@@ -1,0 +1,59 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+button {
+  width: 135px;
+  height: 42px;
+  outline: none;
+  border: none;
+  background-color: var(--button);
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  transition: all 0.4s ease-in-out;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(194, 194, 194, 1) 72%,
+    rgba(47, 47, 47, 1) 100%
+  );
+  background-position-x: left;
+  background-size: 1000%;
+  margin: 3rem;
+}
+
+button:hover {
+  background-size: 300%;
+}
+
+input {
+  border: none;
+  background: none;
+  border-bottom: 2px solid var(--primary);
+  color: var(--primary);
+  outline: none;
+  padding-bottom: 3px;
+}
+
+input::placeholder {
+  color: var(--primary);
+  font-size: 13.6px;
+  letter-spacing: 2.8px;
+  font-weight: 200;
+}

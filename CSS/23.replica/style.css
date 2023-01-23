@@ -1,0 +1,14 @@
+/* UTILS */
+@import url(./styles/utils/_palettes.css);
+@import url(./styles/utils/_reset.css);
+
+/* GLOBAL */
+@import url(./styles/blocks/_global.css);
+
+/* BLOCKS */
+@import url(./styles/blocks/_header.css);
+@import url(./styles/blocks/_main.css);
+@import url(./styles/blocks/_gallery.css);
+@import url(./styles/blocks/_video.css);
+@import url(./styles/blocks/_footer.css);
+@import url(./styles/blocks/_tech.css);
