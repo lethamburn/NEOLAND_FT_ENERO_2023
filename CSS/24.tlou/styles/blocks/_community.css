@@ -1,7 +1,7 @@
 .community {
   scroll-snap-align: start;
   height: 100vh;
-  background-image: url(./images/story.jpeg);
+  background-image: url(/images/story.jpeg);
   background-size: cover;
   display: flex;
   justify-content: center;
