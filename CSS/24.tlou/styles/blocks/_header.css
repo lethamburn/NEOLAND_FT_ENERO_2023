@@ -1,0 +1,100 @@
+nav {
+  width: 100vh;
+  height: 80px;
+  position: sticky;
+  transform: rotate(-90deg) translateX(-100%);
+  -webkit-transform-origin: left top;
+  z-index: 3;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  top: 27px;
+  padding-right: 4rem;
+  gap: 2rem;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+nav > ul > li > a {
+  transition: all 0.5s ease-in-out;
+}
+
+nav > ul > li > a:hover {
+  color: var(--highlight);
+}
+
+nav > ul > li:first-child {
+  color: var(--highlight);
+}
+
+header {
+  scroll-snap-align: start;
+  background-image: url(/images/hero.png);
+  background-size: cover;
+  height: 100vh;
+  max-width: 100vw;
+  overflow: hidden;
+}
+
+header > .header_container {
+  background-color: var(--background-tr);
+  position: absolute;
+  top: 0;
+}
+
+header > .header_container > article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+  position: relative;
+  width: calc(100vw);
+  height: 100vh;
+  right: 0;
+  bottom: 0;
+  padding-right: 10vw;
+  padding-top: 18vh;
+  font-size: 1.5rem;
+}
+
+header > .header_container > article > .logo {
+  filter: invert(100%);
+  width: 40vw;
+}
+
+header > .header_container > article > .company {
+  width: 20vw;
+  filter: invert(100%) saturate(0%);
+}
+
+header > .header_container > article > blockquote {
+  width: 30vw;
+  text-align: right;
+}
+
+@media screen and (max-width: 1000px) {
+  header > .header_container > article > blockquote {
+    width: 73vw;
+    font-size: 1.1rem;
+  }
+}
+
+header > .header_container > article > .quote {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 30vw;
+  text-align: right;
+  gap: 1rem;
+}
+
+header > .header_container > article > .quote > span {
+  height: 4px;
+  background-color: var(--primary);
+  width: 100px;
+}

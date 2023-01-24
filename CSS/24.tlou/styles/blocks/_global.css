@@ -1,0 +1,21 @@
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+h2 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  border-bottom: 8px solid var(--highlight);
+}
+
+@media screen and (max-width: 1000px) {
+  h2 {
+    font-size: 2rem;
+  }
+}

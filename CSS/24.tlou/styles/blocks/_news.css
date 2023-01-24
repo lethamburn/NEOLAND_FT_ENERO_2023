@@ -1,0 +1,73 @@
+.news {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+}
+
+.news > .blog_background {
+  width: 50vw;
+  background-image: url(./images/blog.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.news > .blog {
+  width: 50vw;
+  background-color: var(--primary);
+  background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+  color: var(--background);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 0.8rem;
+}
+
+.news > .blog > h2 {
+  align-self: flex-start;
+  margin-left: 10vw;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .news {
+    flex-direction: column;
+  }
+  .news > .blog_background {
+    width: 100vw;
+    height: 20vh;
+  }
+  .news > .blog {
+    width: 100vw;
+    height: 80vh;
+    gap: 0.1rem;
+    font-size: 0.7rem;
+  }
+
+  .news > .blog > h2 {
+    margin-bottom: 0.1rem;
+  }
+}
+
+.news > .blog h3 {
+  text-transform: uppercase;
+}
+
+.news > .blog > article {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.news > .blog > article:hover {
+  background-image: url(./images/splat.png);
+  background-size: cover;
+}
+
+.news > .blog > article > .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
