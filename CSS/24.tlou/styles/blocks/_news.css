@@ -6,7 +6,7 @@
 
 .news > .blog_background {
   width: 50vw;
-  background-image: url(./images/blog.jpeg);
+  background-image: url(/images/blog.jpeg);
   background-size: cover;
   background-position: center;
 }
