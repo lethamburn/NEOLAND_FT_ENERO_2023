@@ -1,0 +1,51 @@
+body {
+  padding: 1rem 20rem;
+  background-color: whitesmoke;
+  color: black;
+  transition: all 0.5s ease-in-out;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+.animated-text {
+  font-size: 30px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.animated-text.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: crimson;
+  border: 2px solid black;
+  transition: all 1s ease-in-out;
+}
+
+.rotate {
+  transform: translateX(60vw) rotate(360deg);
+  background-color: cadetblue;
+}
+
+.dark {
+  background-color: black;
+  color: whitesmoke;
+}
+
+.highlight {
+  background-size: 100% 100%;
+}
+
+span {
+  transition: all 1 ease-in-out;
+  background-image: linear-gradient(yellow, yellow);
+  background-size: 0% 100%;
+}
