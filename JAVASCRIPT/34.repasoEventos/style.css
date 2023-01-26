@@ -1,0 +1,68 @@
+body {
+  color: whitesmoke;
+}
+
+.card {
+  background-color: cadetblue;
+  color: whitesmoke;
+  font-size: 3rem;
+  margin: 0 10rem;
+  padding: 3rem;
+  border: 4px solid black;
+  border-radius: 10px;
+  transition: background-color 1s ease-in-out;
+}
+
+.container {
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  font-size: 2rem;
+  border: none;
+  background-color: crimson;
+  color: whitesmoke;
+  outline: none;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: rgb(173, 17, 48);
+}
+
+.carddark {
+  background-color: brown;
+}
+
+.zoom {
+  font-size: 3.2rem;
+}
+
+form {
+  border: 1px solid black;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+form > input {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  background: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 4px solid whitesmoke;
+  color: whitesmoke;
+}

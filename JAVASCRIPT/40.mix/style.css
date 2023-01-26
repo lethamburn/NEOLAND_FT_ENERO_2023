@@ -1,0 +1,15 @@
+#container {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+figure {
+  width: 300px;
+}
+
+figure > img {
+  width: 100%;
+}
