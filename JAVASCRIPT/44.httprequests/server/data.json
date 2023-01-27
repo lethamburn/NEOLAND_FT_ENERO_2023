@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Botella de agua",
+      "price": 2
+    },
+    {
+      "name": "Sandwich",
+      "price": "2",
+      "id": 2
+    },
+    {
+      "name": "Coca de lata",
+      "price": "2",
+      "id": 4
+    },
+    {
+      "name": "Sandwich",
+      "price": "2",
+      "id": 5
+    }
+  ]
+}

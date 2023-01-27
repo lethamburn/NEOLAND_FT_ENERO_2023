@@ -1,0 +1,36 @@
+{
+  "alumnos": [
+    {
+      "id": 1,
+      "name": "Jesus",
+      "surname": "Román"
+    },
+    {
+      "id": 2,
+      "name": "Maria",
+      "surname": "Roo"
+    },
+    {
+      "id": 3,
+      "name": "Kareen",
+      "surname": "Guzmn"
+    }
+  ],
+  "profesores": [
+    {
+      "id": 1,
+      "name": "Antonio",
+      "surname": "Rosales"
+    },
+    {
+      "id": 2,
+      "name": "Alberto",
+      "surname": "Rivera"
+    },
+    {
+      "id": 3,
+      "name": "Fran",
+      "surname": "Rios"
+    }
+  ]
+}

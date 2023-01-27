@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <h2>Crear producto</h2>
+      <h4>Nombre de producto</h4>
+      <input type="text" id="nameProduct" />
+      <h4>Precio</h4>
+      <input type="number" id="priceProduct" />
+      <button type="button" id="createProductBtn">Crear Producto</button>
+    </form>
+    <form>
+      <h2>Editar producto</h2>
+      <h4>Id del producto a editar</h4>
+      <input type="number" id="editIdProduct" />
+      <h4>Nombre de producto</h4>
+      <input type="text" id="editNameProduct" />
+      <h4>Precio</h4>
+      <input type="number" id="editPriceProduct" />
+      <button type="button" id="editProductBtn">Editar Producto</button>
+    </form>
+    <form>
+      <h2>Eliminar producto</h2>
+      <input type="number" id="deleteIdProduct" />
+      <button type="button" id="deleteBtn">Eliminar Producto</button>
+    </form>
+    <div id="container"></div>
+  </body>
+</html>
