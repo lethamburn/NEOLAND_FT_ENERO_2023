@@ -1,0 +1,10 @@
+header > nav {
+  height: 12vh;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}

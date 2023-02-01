@@ -1,0 +1,21 @@
+header > nav {
+  height: 12vh;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+header a {
+  color: inherit;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
