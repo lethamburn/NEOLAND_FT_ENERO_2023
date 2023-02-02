@@ -1,0 +1,20 @@
+.alive {
+  color: green;
+  padding: 3rem;
+  background-image: url(https://img.freepik.com/foto-gratis/gran-paisaje-verde-cubierto-cesped-rodeado-arboles_181624-14827.jpg?w=2000);
+  background-size: cover;
+}
+
+.dead {
+  color: red;
+  padding: 3rem;
+  background-image: url(https://cdn.britannica.com/86/47786-050-0292FAB2/soldiers-Normandy-American-Cemetery-and-Memorial-soil.jpg);
+  background-size: cover;
+}
+
+.unknown {
+  color: blue;
+  padding: 3rem;
+  background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
+  background-size: cover;
+}
