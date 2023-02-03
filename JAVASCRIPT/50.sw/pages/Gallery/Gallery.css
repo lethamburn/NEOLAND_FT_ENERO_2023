@@ -1,0 +1,37 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery-container {
+  padding: 1rem 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+.gallery-container img {
+  width: 100%;
+  aspect-ratio: 1.1;
+  object-fit: cover;
+  object-position: top;
+}
+
+.gallery ul {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+
+.character {
+  border: 4px solid cadetblue;
+}
+
+.droid {
+  border: 4px solid yellow;
+}
+
+.creature {
+  border: 4px solid crimson;
+}
