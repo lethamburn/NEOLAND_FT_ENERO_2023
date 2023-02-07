@@ -1,0 +1,7 @@
+img {
+  width: 250px;
+  height: 250px;
+  padding: 1rem;
+  object-fit: cover;
+  border: 2px solid whitesmoke;
+}
