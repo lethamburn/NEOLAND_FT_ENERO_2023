@@ -1,0 +1,16 @@
+.layout {
+  display: grid;
+  grid-template-rows:
+    20vh
+    60vh
+    20vh;
+}
+
+@media screen and (max-width: 500px) {
+  .layout {
+    grid-template-rows:
+      calc(100vh / 3)
+      calc(100vh / 3)
+      calc(100vh / 3);
+  }
+}

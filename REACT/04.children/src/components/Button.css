@@ -1,0 +1,12 @@
+.btn {
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: 2px solid black;
+  padding: 1rem 2rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: cadetblue;
+}
