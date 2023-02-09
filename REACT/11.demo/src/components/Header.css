@@ -1,0 +1,17 @@
+header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: 4rem;
+  text-transform: uppercase;
+}
+
+header > nav > img {
+  height: 80%;
+  filter: invert(90%);
+}

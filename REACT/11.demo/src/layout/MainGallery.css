@@ -1,0 +1,8 @@
+.sw-layout-gallery {
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 400px;
+  grid-gap: 2rem;
+  padding: 4rem;
+}
