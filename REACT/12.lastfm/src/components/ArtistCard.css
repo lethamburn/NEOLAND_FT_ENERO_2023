@@ -1,0 +1,23 @@
+.nf-artistcard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--nf-gap-vertical);
+  padding: var(--nf-horizontal-padding);
+}
+
+.nf-artistcard > ul {
+  display: flex;
+  gap: var(--nf-gap-horizontal);
+}
+
+.nf-artistcard > ul > li {
+  padding: var(--nf-tag-padding);
+  border: var(--nf-border);
+  border-radius: var(--nf-border-radius);
+}
+
+.nf-artistcard p {
+  text-align: justify;
+}

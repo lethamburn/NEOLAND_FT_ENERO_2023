@@ -1,0 +1,26 @@
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--nf-horizontal-padding);
+  height: 100%;
+}
+
+header > nav > ul {
+  display: flex;
+  gap: var(--nf-gap-horizontal);
+  width: calc(100% / 3);
+  justify-content: center;
+}
+
+header > nav > div {
+  width: calc(100% / 3);
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+header > nav > div > img {
+  filter: invert(80%);
+  height: 80%;
+}

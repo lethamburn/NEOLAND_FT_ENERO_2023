@@ -1,0 +1,7 @@
+.nf-layout {
+  display: grid;
+  grid-template-rows:
+    5vh
+    1fr
+    5vh;
+}

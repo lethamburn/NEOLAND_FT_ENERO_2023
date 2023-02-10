@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --nf-color-background: #000000;
+  --nf-color-primary: #f4f4f4;
+  --nf-color-secondary: #dddddd;
+  --nf-color-company: #b90000;
+
+  --nf-typography-primary: "Open Sans", sans-serif;
+  --nf-typography-heading: "Barlow", sans-serif;
+
+  --nf-gap-horizontal: 4rem;
+  --nf-gap-vertical: 2rem;
+
+  --nf-horizontal-padding: 0 4rem;
+  --nf-tag-padding: 0.5rem 1.5rem;
+
+  --nf-border: 1px solid var(--nf-color-company);
+  --nf-border-radius: 0.75rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: var(--nf-typography-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--nf-color-background);
+  color: var(--nf-color-primary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--nf-typography-heading);
+}
+
+h1,
+span {
+  color: var(--nf-color-company);
+}
+
+a {
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+  color: var(--nf-color-company);
+  font-weight: 700;
+}
+
+.active {
+  color: var(--nf-color-company);
+  font-weight: 700;
+}
+
+main {
+  min-height: 90vh;
+}
