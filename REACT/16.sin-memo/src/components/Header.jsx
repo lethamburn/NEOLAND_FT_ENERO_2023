@@ -1,0 +1,10 @@
+const Header = () => {
+  console.log("Renderizando Header");
+  return (
+    <header>
+      <h1>Header</h1>
+    </header>
+  );
+};
+
+export default Header;
