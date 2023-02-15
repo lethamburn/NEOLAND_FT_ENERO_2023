@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --nasa-color-background: #363442;
+  --nasa-color-primary: #ffffff;
+  --nasa-color-secondary: #e6d3ce;
+  --nasa-color-highlight: #fe3e1c;
+
+  --nasa-padding-block: 0.5rem 2rem;
+  --nasa-padding-section: 2rem 2rem;
+  --nasa-gap: 2rem;
+
+  --nasa-typography-h1: 3rem;
+  --nasa-typography-h2: 2.5rem;
+  --nasa-typography-h3: 2rem;
+  --nasa-typography-content: 1.3rem;
+
+  --nasa-typography-base: "Space Grotesk", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: var(--nasa-typography-base);
+  font-size: var(--nasa-typography-content);
+}
+
+body {
+  background-color: var(--nasa-color-background);
+  color: var(--nasa-color-primary);
+  background-image: url(https://res.cloudinary.com/dfnh5hecu/image/upload/v1676449016/NASA%20API/700862_yybm8y_euc5al.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+a {
+  color: inherit;
+  text-transform: uppercase;
+}
+
+a:hover,
+.active {
+  color: var(--nasa-color-highlight);
+}
+
+strong {
+  color: var(--nasa-color-highlight);
+  font-weight: bolder;
+  font-size: inherit;
+}
+
+h1 {
+  font-size: var(--nasa-typography-h1);
+}
+
+h2 {
+  font-size: var(--nasa-typography-h2);
+}
+
+h3 {
+  font-size: var(--nasa-typography-h3);
+}

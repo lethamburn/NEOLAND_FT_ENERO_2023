@@ -1,0 +1,16 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--nasa-padding-block);
+  background-color: var(--nasa-color-background);
+}
+
+header > img {
+  height: 100%;
+}
+
+header > ul {
+  display: flex;
+  gap: var(--nasa-gap);
+}

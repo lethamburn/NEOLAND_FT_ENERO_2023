@@ -1,0 +1,12 @@
+.nasa-page-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--nasa-padding-section);
+}
+
+.nasa-page-about > section {
+  padding: 4rem;
+  background-color: var(--nasa-color-background);
+  text-align: justify;
+}

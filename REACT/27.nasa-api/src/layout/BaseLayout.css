@@ -1,0 +1,8 @@
+.nasa-layout-base {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows:
+    8vh
+    1fr
+    5vh;
+}
