@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+body {
+  transition: all 0.5s ease-in-out;
+}
+
+.light {
+  background-color: rgba(255, 255, 255, 0.87);
+  color: #1a1a1a;
+}
+
+.dark {
+  background-color: #1a1a1a;
+  color: rgba(255, 255, 255, 0.87);
+}

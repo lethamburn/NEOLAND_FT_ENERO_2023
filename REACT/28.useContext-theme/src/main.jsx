@@ -2,22 +2,24 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
+import Home from "./pages/Home";
 import Gallery from "./pages/Gallery";
-import GalleryDetail from "./pages/GalleryDetail";
+import About from "./pages/About";
 import "./index.css";
-import { SongContextProvider } from "./context/songContext";
+import { ThemeContextProvider } from "./context/themeContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter basename="/">
-      <SongContextProvider>
+      <ThemeContextProvider>
         <Routes>
           <Route path="/" element={<App />}>
-            <Route index element={<Gallery />} />
-            <Route path="/:id" element={<GalleryDetail />} />
+            <Route index element={<Home />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/about" element={<About />} />
           </Route>
         </Routes>
-      </SongContextProvider>
+      </ThemeContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

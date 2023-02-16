@@ -40,3 +40,25 @@
 .read-the-docs {
   color: #888;
 }
+
+.App {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.App > div {
+  border: 1px solid cadetblue;
+  width: 400px;
+  height: 400px;
+  padding: 1rem;
+}
+
+.App > input {
+  height: 1rem;
+}
+
+.App > button {
+  height: 3rem;
+}

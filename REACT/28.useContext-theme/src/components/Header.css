@@ -1,0 +1,11 @@
+header {
+  height: 10vh;
+}
+
+header > nav > ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 2rem;
+}
