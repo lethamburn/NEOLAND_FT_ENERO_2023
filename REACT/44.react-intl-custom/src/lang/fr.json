@@ -1,0 +1,7 @@
+{
+  "app.content": "Modifiez src/App.jsx et enregistrez pour tester HMR",
+  "app.docs": "Cliquez sur les logos Vite et React pour en savoir plus {user}",
+  "header.home": "Maison",
+  "header.gallery": "Gallerie",
+  "header.about": "Croissant"
+}

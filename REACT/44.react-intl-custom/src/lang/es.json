@@ -1,0 +1,7 @@
+{
+  "app.content": "Edita src/App.jsx y guarda para testear HMR",
+  "app.docs": "Haz click en los logos de Vite y React para aprender más {user}",
+  "header.home": "Principal",
+  "header.gallery": "Galeria",
+  "header.about": "Sobre mi"
+}

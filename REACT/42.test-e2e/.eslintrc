@@ -1,0 +1,5 @@
+"globals": {
+    "describe": "writable",
+    "it": "writable",
+    "cy": "writable"
+  }
