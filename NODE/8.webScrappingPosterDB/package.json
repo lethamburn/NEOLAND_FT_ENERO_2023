@@ -1,0 +1,17 @@
+{
+  "name": "8.webscrappingposterdb",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.1.4",
+    "puppeteer": "^19.7.2"
+  }
+}

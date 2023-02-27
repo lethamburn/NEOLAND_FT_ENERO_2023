@@ -1,0 +1,17 @@
+{
+  "name": "7.webscrappinggamepro",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^9.1.4",
+    "puppeteer": "^19.7.2"
+  }
+}
