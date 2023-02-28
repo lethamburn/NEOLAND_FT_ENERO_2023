@@ -1,0 +1,15 @@
+{
+  "name": "16.schemas",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mongoose": "^7.0.0"
+  }
+}
