@@ -3,7 +3,7 @@ const Console = require("../models/console.model");
 const getAllConsoles = async (req, res, next) => {
   try {
     const consoles = await Console.find().populate("videogames");
-    res.status(200).json(consoles);
+    return res.status(200).json(consoles);
   } catch (error) {
     return next(error);
   }
