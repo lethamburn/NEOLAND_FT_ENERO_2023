@@ -10,7 +10,7 @@ const {
 
 const MoviesRoutes = express.Router();
 
-MoviesRoutes.get("/", [isAuth], getAllMovies);
+MoviesRoutes.get("/", getAllMovies);
 MoviesRoutes.post("/", [isAuth], upload.single("poster"), createMovie);
 MoviesRoutes.patch("/:id", upload.single("poster"), updateMovieByID);
 
