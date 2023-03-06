@@ -2,10 +2,10 @@
   "name": "24.auth",
   "version": "0.0.1",
   "description": "",
-  "main": "./src/index.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./src/index.js",
-    "dev": "nodemon ./src/index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
   "keywords": [],
   "author": "Antonio Rosales <antoniorosalesmartinez90gmail.com>",

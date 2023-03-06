@@ -1,8 +1,8 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
-const connect = require("./utils/connect");
-const { configCloudinary } = require("./middlewares/files.middleware");
+const connect = require("./src/utils/connect");
+const { configCloudinary } = require("./src/middlewares/files.middleware");
 
 dotenv.config();
 
@@ -26,10 +26,10 @@ server.use(express.json({ limit: "5mb" }));
 server.use(express.urlencoded({ limit: "5mb", extended: true }));
 
 //Routes
-const MoviesRoutes = require("./api/routes/movies.routes");
+const MoviesRoutes = require("./src/api/routes/movies.routes");
 server.use("/api/v1/movies", MoviesRoutes);
 
-const UsersRoutes = require("./api/routes/users.routes");
+const UsersRoutes = require("./src/api/routes/users.routes");
 server.use("/api/v1/users", UsersRoutes);
 
 //Route not found
