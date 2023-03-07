@@ -32,7 +32,13 @@ const loginUser = async (req, res, next) => {
     if (bcrypt.compareSync(req.body.password, user.password)) {
       //Si las contraseña coinciden creamos un token
       const token = generateToken(user._id, user.email);
-      return res.status(200).json(token);
+      return res.status(200).json({
+        user: {
+          email: user.email,
+          _id: user._id,
+        },
+        token: token,
+      });
     }
   } catch (error) {
     return next("User cannot login", error);
